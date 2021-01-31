@@ -1,0 +1,76 @@
+JvmtiExport can_access_local_variables 0
+JvmtiExport can_hotswap_or_post_breakpoint 0
+JvmtiExport can_post_on_exceptions 0
+# 579 ciObject found
+ciMethod java/lang/Object <init> ()V 4097 1 6543054 0 0
+ciMethod java/lang/Object getClass ()Ljava/lang/Class; 2049 1 256 0 -1
+ciMethod java/lang/Object hashCode ()I 2049 1 256 0 -1
+ciMethod java/lang/Object equals (Ljava/lang/Object;)Z 2193 1 78841 0 -1
+ciMethod java/lang/String length ()I 3073 1 1462873 0 0
+ciMethod java/lang/System nanoTime ()J 3073 1 384 0 -1
+ciMethod java/lang/System identityHashCode (Ljava/lang/Object;)I 2049 1 256 0 -1
+ciMethod java/lang/ref/Reference get ()Ljava/lang/Object; 1025 1 128 0 -1
+ciMethod java/lang/ref/Reference clear ()V 4097 1 13593 0 0
+ciMethod java/lang/ref/Reference <init> (Ljava/lang/Object;)V 2049 1 39280 0 0
+ciMethod java/lang/ref/Reference <init> (Ljava/lang/Object;Ljava/lang/ref/ReferenceQueue;)V 2065 1 51462 0 96
+ciMethod java/lang/ref/WeakReference <init> (Ljava/lang/Object;)V 4097 1 29903 0 0
+ciMethod java/lang/Thread currentThread ()Ljava/lang/Thread; 2049 1 256 0 -1
+ciMethod java/util/Map get (Ljava/lang/Object;)Ljava/lang/Object; 0 0 1 0 -1
+ciMethod java/util/Map put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 0 0 1 0 -1
+ciMethod java/util/Map remove (Ljava/lang/Object;)Ljava/lang/Object; 0 0 1 0 -1
+ciMethod sun/misc/Unsafe compareAndSwapLong (Ljava/lang/Object;JJJ)Z 2049 1 256 0 -1
+ciMethod sun/misc/Unsafe getAndAddLong (Ljava/lang/Object;JJ)J 3073 17 968 0 -1
+ciMethod java/lang/Boolean booleanValue ()Z 1057 1 132 0 -1
+ciMethod java/util/Collection size ()I 0 0 1 0 -1
+ciMethod java/util/List size ()I 0 0 1 0 -1
+ciMethod java/util/List get (I)Ljava/lang/Object; 0 0 1 0 -1
+ciMethod java/util/ArrayList size ()I 1025 1 128 0 0
+ciMethod java/util/ArrayList elementData (I)Ljava/lang/Object; 1953 1 46696 0 0
+ciMethod java/util/ArrayList get (I)Ljava/lang/Object; 1921 1 39691 0 128
+ciMethod java/util/ArrayList rangeCheck (I)V 1921 1 46702 0 64
+ciMethod java/util/Set contains (Ljava/lang/Object;)Z 0 0 1 0 -1
+ciMethod java/util/Set add (Ljava/lang/Object;)Z 0 0 1 0 -1
+ciMethod java/util/Set remove (Ljava/lang/Object;)Z 0 0 1 0 -1
+ciMethod java/lang/ThreadLocal initialValue ()Ljava/lang/Object; 1025 1 128 0 0
+ciMethod java/lang/ThreadLocal get ()Ljava/lang/Object; 2345 1 23635 0 1536
+ciMethod java/lang/ThreadLocal setInitialValue ()Ljava/lang/Object; 17 1 416 0 0
+ciMethod java/lang/ThreadLocal set (Ljava/lang/Object;)V 41 1 45644 0 1056
+ciMethod java/lang/ThreadLocal remove ()V 1089 1 4629 0 0
+ciMethod java/lang/ThreadLocal getMap (Ljava/lang/Thread;)Ljava/lang/ThreadLocal$ThreadLocalMap; 2177 1 18649 0 0
+ciMethod java/lang/ThreadLocal createMap (Ljava/lang/Thread;Ljava/lang/Object;)V 9 1 86 0 0
+ciMethod java/lang/ThreadLocal access$400 (Ljava/lang/ThreadLocal;)I 1025 1 128 0 0
+ciMethod java/util/concurrent/atomic/AtomicLong get ()J 2081 1 17672 0 0
+ciMethod java/util/concurrent/atomic/AtomicLong compareAndSet (JJ)Z 1673 1 2151 0 0
+ciMethod java/util/concurrent/atomic/AtomicLong getAndIncrement ()J 3137 1 11377 0 0
+ciMethod java/lang/Enum compareTo (Ljava/lang/Enum;)I 2049 1 5378 0 128
+ciMethod java/lang/Enum getDeclaringClass ()Ljava/lang/Class; 1 1 3086 0 -1
+ciMethodData java/lang/Object <init> ()V 2 6543054 orig 264 88 29 28 87 0 0 0 0 128 4 5 21 0 0 0 0 32 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 113 166 30 3 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 3 0 1 0 0 0 0 0 0 0 255 255 255 255 0 0 0 0 0 0 0 0 data 0 oops 0
+ciMethod java/util/Collections$SetFromMap add (Ljava/lang/Object;)Z 2177 1 5534 0 992
+ciMethod java/util/concurrent/ConcurrentHashMap spread (I)I 2137 1 59757 0 -1
+ciMethod java/util/concurrent/ConcurrentHashMap tabAt ([Ljava/util/concurrent/ConcurrentHashMap$Node;I)Ljava/util/concurrent/ConcurrentHashMap$Node; 3217 1 159372 0 -1
+ciMethod java/util/concurrent/ConcurrentHashMap casTabAt ([Ljava/util/concurrent/ConcurrentHashMap$Node;ILjava/util/concurrent/ConcurrentHashMap$Node;Ljava/util/concurrent/ConcurrentHashMap$Node;)Z 2505 1 20269 0 -1
+ciMethod java/util/concurrent/ConcurrentHashMap put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 2057 1 7524 0 64
+ciMethod java/util/concurrent/ConcurrentHashMap putVal (Ljava/lang/Object;Ljava/lang/Object;Z)Ljava/lang/Object; 2225 489 26942 0 -1
+ciMethod java/util/concurrent/ConcurrentHashMap initTable ()[Ljava/util/concurrent/ConcurrentHashMap$Node; 65 1 762 0 -1
+ciMethod java/util/concurrent/ConcurrentHashMap addCount (JI)V 2049 73 34103 0 -1
+ciMethod java/util/concurrent/ConcurrentHashMap helpTransfer ([Ljava/util/concurrent/ConcurrentHashMap$Node;Ljava/util/concurrent/ConcurrentHashMap$Node;)[Ljava/util/concurrent/ConcurrentHashMap$Node; 0 0 4 0 -1
+ciMethod java/util/concurrent/ConcurrentHashMap treeifyBin ([Ljava/util/concurrent/ConcurrentHashMap$Node;I)V 1 1 1 0 -1
+ciMethod java/util/concurrent/ConcurrentHashMap$Node <init> (ILjava/lang/Object;Ljava/lang/Object;Ljava/util/concurrent/ConcurrentHashMap$Node;)V 3081 1 26784 0 -1
+ciMethod java/lang/ThreadLocal$ThreadLocalMap nextIndex (II)I 2049 1 14999 0 0
+ciMethod java/lang/ThreadLocal$ThreadLocalMap <init> (Ljava/lang/ThreadLocal;Ljava/lang/Object;)V 9 1 87 0 -1
+ciMethod java/lang/ThreadLocal$ThreadLocalMap getEntry (Ljava/lang/ThreadLocal;)Ljava/lang/ThreadLocal$ThreadLocalMap$Entry; 3185 1 6812 0 384
+ciMethod java/lang/ThreadLocal$ThreadLocalMap getEntryAfterMiss (Ljava/lang/ThreadLocal;ILjava/lang/ThreadLocal$ThreadLocalMap$Entry;)Ljava/lang/ThreadLocal$ThreadLocalMap$Entry; 9 1 954 0 0
+ciMethod java/lang/ThreadLocal$ThreadLocalMap set (Ljava/lang/ThreadLocal;Ljava/lang/Object;)V 49 1 5285 0 928
+ciMethod java/lang/ThreadLocal$ThreadLocalMap remove (Ljava/lang/ThreadLocal;)V 1089 65 4623 0 0
+ciMethod java/lang/ThreadLocal$ThreadLocalMap replaceStaleEntry (Ljava/lang/ThreadLocal;Ljava/lang/Object;I)V 0 0 1 0 -1
+ciMethod java/lang/ThreadLocal$ThreadLocalMap expungeStaleEntry (I)I 1217 89 4734 0 0
+ciMethod java/lang/ThreadLocal$ThreadLocalMap cleanSomeSlots (II)Z 569 1449 434 0 0
+ciMethod java/lang/ThreadLocal$ThreadLocalMap rehash ()V 17 1 27 0 0
+ciMethod java/lang/ThreadLocal$ThreadLocalMap resize ()V 17 385 27 0 -1
+ciMethod java/lang/ThreadLocal$ThreadLocalMap expungeStaleEntries ()V 17 385 27 0 -1
+ciMethod java/lang/ThreadLocal$ThreadLocalMap access$000 (Ljava/lang/ThreadLocal$ThreadLocalMap;Ljava/lang/ThreadLocal;)Ljava/lang/ThreadLocal$ThreadLocalMap$Entry; 3185 1 23236 0 480
+ciMethod java/lang/ThreadLocal$ThreadLocalMap access$100 (Ljava/lang/ThreadLocal$ThreadLocalMap;Ljava/lang/ThreadLocal;Ljava/lang/Object;)V 49 1 46022 0 0
+ciMethod java/lang/ThreadLocal$ThreadLocalMap access$200 (Ljava/lang/ThreadLocal$ThreadLocalMap;Ljava/lang/ThreadLocal;)V 1089 1 4625 0 0
+ciMethod java/lang/ThreadLocal$ThreadLocalMap$Entry <init> (Ljava/lang/ThreadLocal;Ljava/lang/Object;)V 673 1 522 0 0
+ciMethodData java/lang/String length ()I 2 1462873 orig 264 88 29 28 87 0 0 0 0 96 60 5 21 0 0 0 0 32 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 128 1 0 0 201 134 178 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 3 0 1 0 0 0 0 0 0 0 255 255 255 255 0 0 0 0 0 0 0 0 data 0 oops 0
+ciMethodData java/util/ArrayList get (I)Ljava/lang/Object; 2 39691 orig 264 88 29 28 87 0 0 0 0 224 32 18 21 0 0 0 0 144 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 240 0 0 0 217 208 4 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 6 0 2 0 0 0 64 0 0 0 255 255 255 255 2 0 2 0 0 0 0 0 data 8 0x20002 0x9a1d 0x70005 0x0 0x1d06eb80 0x9a1c 0x0 0x0 oops 1

@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Bookservice">
+
+    <LinearLayout
+        android:id="@+id/layoutlineartop"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="20dp"
+            app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:fontFamily="@font/bold"
+            android:gravity="center"
+            android:text="Slot Booking"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/screoolview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutlineartop"
+
+        android:layout_marginBottom="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <View
+                android:id="@+id/separatorabc"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:background="@color/black" />
+
+            <!--            <View-->
+            <!--                android:id="@+id/separatorqwq"-->
+            <!--                android:layout_width="fill_parent"-->
+            <!--                android:layout_height="1dip"-->
+            <!--                android:layout_alignParentTop="true"-->
+            <!--                android:layout_centerVertical="true"-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                android:background="@color/black" />-->
+
+            <LinearLayout
+                android:id="@+id/abcd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/parttoo"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/secondlayone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linearLayouttop"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="130dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/kym" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:fontFamily="@font/semibold"
+                            android:text="Bike Name"
+                            android:textColor="@color/blue"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="20dp"
+                            android:fontFamily="@font/semibold"
+                            android:text="KTM 250cc"
+                            android:textColor="@color/blue"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/secondlayon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linearLayouttop"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+
+                    <View
+                        android:id="@+id/separator"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dip"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/black" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:fontFamily="@font/semibold"
+                            android:text="Pay to service center"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:fontFamily="@font/semibold"
+                            android:text="- \u20B9 1299"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:fontFamily="@font/semibold"
+                            android:text="Slot booking charge"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:fontFamily="@font/semibold"
+                            android:text="- \u20B9 49 "
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:fontFamily="@font/semibold"
+                            android:text="Grand total"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:fontFamily="@font/semibold"
+                            android:text="- \u20B9 1348 "
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:fontFamily="@font/bold"
+                            android:text="Pay online"
+                            android:textColor="@color/black"
+                            android:textSize="17dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:fontFamily="@font/bold"
+                            android:text="- \u20B9 49 "
+                            android:textColor="@color/black"
+                            android:textSize="17dp" />
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:id="@+id/separatorer"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dip"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/black" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/bold"
+                    android:text="MechenicRooms Advantage"
+                    android:textColor="@color/blue"
+                    android:textSize="20dp" />
+
+                <LinearLayout
+                    android:id="@+id/secondlayfie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linearlayouttop"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="30dp"
+
+                        android:layout_marginBottom="1dp"
+                        android:fontFamily="@font/bold"
+                        android:textSize="14dp"
+
+                        app:srcCompat="@drawable/ic_fiber_manual_record_black_24dp"></ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/bold"
+                        android:text="Limited Slots Avilable.Pay Upfront and get a slot confirmation."
+                        android:textColor="@color/blue"
+                        android:textSize="16dp"></TextView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/secondlaytoo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linearlayouttop"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="30dp"
+
+                        android:layout_marginBottom="1dp"
+                        android:fontFamily="@font/bold"
+                        android:textSize="14dp"
+
+                        app:srcCompat="@drawable/ic_fiber_manual_record_black_24dp"></ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/bold"
+                        android:text="Best Safety Standard"
+                        android:textColor="@color/blue"
+                        android:textSize="16dp"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/secondlaythreee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linearlayouttop"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="30dp"
+
+                        android:layout_marginBottom="1dp"
+                        android:fontFamily="@font/bold"
+                        android:textSize="14dp"
+
+                        app:srcCompat="@drawable/ic_fiber_manual_record_black_24dp"></ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/bold"
+                        android:text="Certified Technicians"
+                        android:textColor="@color/blue"
+                        android:textSize="16dp"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/secondlayfour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linearlayouttop"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="30dp"
+
+                        android:layout_marginBottom="1dp"
+                        android:fontFamily="@font/bold"
+                        android:textSize="14dp"
+
+                        app:srcCompat="@drawable/ic_fiber_manual_record_black_24dp"></ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/bold"
+                        android:text="100% Purchase Protection"
+                        android:textColor="@color/blue"
+                        android:textSize="16dp"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/secondlayfor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linearlayouttop"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="30dp"
+
+                        android:layout_marginBottom="1dp"
+                        android:fontFamily="@font/bold"
+                        android:textSize="14dp"
+
+                        app:srcCompat="@drawable/ic_fiber_manual_record_black_24dp"></ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/bold"
+                        android:text="Save Upto 30% on Service Package"
+                        android:textColor="@color/blue"
+                        android:textSize="16dp"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/secondlaysix"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linearlayouttop"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="30dp"
+
+                        android:layout_marginBottom="1dp"
+                        android:fontFamily="@font/bold"
+                        android:textSize="14dp"
+
+                        app:srcCompat="@drawable/ic_fiber_manual_record_black_24dp"></ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/bold"
+                        android:text="Easy to Access"
+                        android:textColor="@color/blue"
+                        android:textSize="16dp"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/secondlayseven"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linearlayouttop"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="30dp"
+
+                        android:layout_marginBottom="1dp"
+                        android:fontFamily="@font/bold"
+                        android:textSize="14dp"
+
+                        app:srcCompat="@drawable/ic_fiber_manual_record_black_24dp"></ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/bold"
+                        android:text="Great Deal in Market"
+                        android:textColor="@color/blue"
+                        android:textSize="16dp"></TextView>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/burronnexttt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/circle_button"
+
+        android:fontFamily="@font/semibold"
+        android:text="Pay Now"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+</RelativeLayout>

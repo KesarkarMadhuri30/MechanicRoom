@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".Mainpage">
+
+    <LinearLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <ImageView
+
+        android:id="@+id/imageSwitcher1"
+        android:layout_width="fill_parent"
+        android:layout_height="230dp"
+        android:layout_below="@+id/mainlayout"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/services"
+        android:layout_alignParentLeft="true" />
+
+    <LinearLayout
+        android:layout_below="@id/imageSwitcher1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/first"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:text="Car Service"/>
+        <GridView
+            android:id="@+id/simpleGridView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:numColumns="3"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/second"
+
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:text="Bike Service"/>
+        <GridView
+            android:id="@+id/simpleGrid"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:numColumns="3"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

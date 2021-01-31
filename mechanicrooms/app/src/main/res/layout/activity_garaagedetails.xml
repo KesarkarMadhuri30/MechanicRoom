@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbacklow"
+    tools:context=".Garaagedetails">
+
+
+    <LinearLayout
+        android:id="@+id/linearlayouttopname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageviewtop"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/ic_account_circle_black_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/txt_garage_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/bold"
+            android:gravity="center_horizontal"
+            android:text="SANTOSH GARAGE"
+            android:textColor="@color/blue"
+            android:textSize="27dp" />
+    </LinearLayout>
+
+    <View android:id="@+id/separator"
+        android:background="@color/black"
+        android:layout_width = "fill_parent"
+        android:layout_height="1dip"
+        android:layout_centerVertical ="true"
+        android:layout_alignParentTop="true"/>
+
+    <ScrollView
+        android:id="@+id/screoolview"
+        android:layout_above="@+id/burronnext"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/linearlayouttopname"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayouttop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearlayouttopname"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/rate_reviews_lyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:text="Button1"
+                android:textSize="16sp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_baseline_rate_review_24"
+                    tools:ignore="VectorDrawableCompat" />
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bold"
+                       android:layout_gravity="center"
+                        android:text="Reviews Us"
+                        android:textColor="@color/blue"
+                        android:textSize="16dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:text="Button1"
+                android:textSize="16sp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_baseline_access_time_24"
+                    tools:ignore="VectorDrawableCompat" />
+
+
+
+                    <TextView
+                        android:id="@+id/garage_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bold"
+                        android:layout_gravity="center"
+                        android:text="10.00AM - 8PM"
+                        android:textColor="@color/blue"
+                        android:textSize="16dp"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/parttoo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayouttop"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="55sp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:textSize="16sp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_location_on_black_24dp"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bold"
+                        android:text="Pickup &amp; drop"
+                        android:textColor="@color/blue"
+                        android:textSize="16dp"/>
+
+                    <TextView
+                        android:id="@+id/txt_pick_drop_option"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bold"
+                        android:text="No"
+                        android:textColor="@color/blue"
+                        android:textSize="16dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:text="Button1"
+                android:textSize="16sp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_baseline_week_off_24"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5sp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bold"
+                        android:text="Weekoff Day"
+                        android:textColor="@color/blue"
+                        android:textSize="16dp"/>
+
+                    <TextView
+                        android:id="@+id/txt_weekoff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/semibold"
+                        android:text="Thuesday"
+                        android:textColor="@color/blue"
+                        android:textSize="13dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+            <View android:id="@+id/separatorabc"
+                android:background="@color/black"
+                android:layout_width = "fill_parent"
+                android:layout_height="1dip"
+                android:layout_centerVertical ="true"
+                android:layout_alignParentTop="true"/>
+        <LinearLayout
+            android:layout_below="@id/parttoo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/secondlayone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayouttop"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="@font/bold"
+                android:text="Location"
+                android:textColor="@color/black"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/txt_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/bold"
+                android:text=" Mundhwa - Kharadi Rd, Mundhwa, Pune, Maharashtra 411014"
+                android:textColor="@color/blue"
+                android:textSize="14dp"/>
+            <TextView
+                android:id="@+id/txt_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/bold"
+                android:text=" Area = kharadi"
+                android:textColor="@color/blue"
+                android:textSize="14dp"/>
+            <TextView
+                android:id="@+id/txt_pincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/bold"
+                android:text=" Pincode = 411014"
+                android:textColor="@color/blue"
+                android:textSize="14dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/secondlaytwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearlayouttop"
+            android:layout_marginBottom="8sp"
+            android:layout_marginTop="7dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="@font/bold"
+                android:text="Contact Number"
+                android:textColor="@color/black"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/txt_garage_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/bold"
+                android:text="94260 80676"
+                android:textColor="@color/blue"
+                android:textSize="15dp"/>
+
+        </LinearLayout>
+            <View android:id="@+id/separatornew"
+                android:background="@color/black"
+                android:layout_width = "fill_parent"
+                android:layout_height="1dip"
+                android:layout_centerVertical ="true"
+                android:layout_alignParentTop="true"/>
+            <LinearLayout
+                android:id="@+id/secondlaythree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearlayouttop"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="8sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:fontFamily="@font/bold"
+                    android:text="Services"
+                    android:textColor="@color/black"
+                    android:textSize="23dp"/>
+
+     <!--           <TextView
+                    android:id="@+id/txt_garage_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/bold"
+                    android:text="All kind of Bike Services"
+                    android:textColor="@color/blue"
+                    android:textSize="14dp"/>-->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rvservice"
+                    android:layout_marginRight="8sp"
+                    android:layout_marginTop="8sp"
+                    android:orientation="vertical"/>
+
+            </LinearLayout>
+
+            <View android:id="@+id/view"
+                android:background="@color/black"
+                android:layout_width = "fill_parent"
+                android:layout_height="1dip"
+                android:layout_centerVertical ="true"
+                android:layout_alignParentTop="true"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Photos"
+                android:textSize="23dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bold"/>
+
+              <!--  <TextView
+                    android:id="@+id/error_msg"
+                   android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:visibility="visible"
+                    android:textSize="18dp"
+                    android:layout_marginTop="0dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/bold"/>-->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rvgallery"
+                    android:layout_marginRight="8sp"
+                    android:layout_marginTop="8sp"
+                    android:orientation="vertical">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+
+        </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/burronnext"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/circle_button"
+        android:fontFamily="@font/semibold"
+
+        android:text="Book your Service"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_alignParentLeft="true" />
+
+</RelativeLayout>
+
+
+    <!--    <HorizontalScrollView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_marginBottom="70dp"-->
+    <!--        android:layout_marginRight="20dp"-->
+
+    <!--        android:layout_below="@id/parttoo">-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="vertical">-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/secondlayone"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/linearlayouttop"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:layout_marginTop="25dp"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="30dp"-->
+<!--                    android:fontFamily="@font/bold"-->
+<!--                    android:text="Location"-->
+<!--                    android:textColor="@color/blue"-->
+<!--                    android:textSize="25dp"></TextView>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="30dp"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:maxLines="4"-->
+<!--                    android:fontFamily="@font/bold"-->
+<!--                    android:text=" Mundhwa - Kharadi Rd, Mundhwa, Pune, Maharashtra 411014"-->
+<!--                    android:textColor="@color/blue"-->
+<!--                    android:textSize="15dp"></TextView>-->
+
+<!--            </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/secondlaytwo"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@id/linearlayouttop"-->
+<!--                    android:layout_marginTop="25dp"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="30dp"-->
+<!--                        android:fontFamily="@font/bold"-->
+<!--                        android:text="Contact Number"-->
+<!--                        android:textColor="@color/blue"-->
+<!--                        android:textSize="25dp"></TextView>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="30dp"-->
+<!--                        android:layout_marginTop="5dp"-->
+<!--                        android:fontFamily="@font/bold"-->
+<!--                        android:text="94260 80676"-->
+<!--                        android:textColor="@color/blue"-->
+<!--                        android:textSize="15dp"></TextView>-->
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/secondlaythree"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@id/linearlayouttop"-->
+<!--                    android:layout_marginTop="25dp"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="30dp"-->
+<!--                        android:fontFamily="@font/bold"-->
+<!--                        android:text="Services"-->
+<!--                        android:textColor="@color/blue"-->
+<!--                        android:textSize="25dp"></TextView>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="30dp"-->
+<!--                        android:layout_marginTop="5dp"-->
+<!--                        android:fontFamily="@font/bold"-->
+<!--                        android:text="All kind of Bike Services"-->
+<!--                        android:textColor="@color/blue"-->
+<!--                        android:textSize="15dp"></TextView>-->
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/secondlayfive"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@id/linearlayouttop"-->
+<!--                    android:layout_marginTop="25dp"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="30dp"-->
+<!--                        android:fontFamily="@font/bold"-->
+<!--                        android:text="Avilable Time"-->
+<!--                        android:textColor="@color/blue"-->
+<!--                        android:textSize="25dp"></TextView>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="30dp"-->
+<!--                        android:layout_marginTop="5dp"-->
+<!--                        android:fontFamily="@font/bold"-->
+<!--                        android:text="24 hours"-->
+<!--                        android:textColor="@color/blue"-->
+<!--                        android:textSize="15dp"></TextView>-->
+
+<!--                </LinearLayout>-->
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/secondlayfour"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@id/linearlayouttop"-->
+<!--                    android:layout_marginTop="25dp"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="30dp"-->
+<!--                        android:fontFamily="@font/bold"-->
+<!--                        android:text="Service Area"-->
+<!--                        android:textColor="@color/blue"-->
+<!--                        android:textSize="25dp"></TextView>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="30dp"-->
+<!--                        android:layout_marginTop="5dp"-->
+<!--                        android:fontFamily="@font/bold"-->
+<!--                        android:text="Kharadi,Baner,Hinjewadi"-->
+<!--                        android:textColor="@color/blue"-->
+<!--                        android:textSize="15dp"></TextView>-->
+
+<!--                </LinearLayout>-->
+
+    <!--        </LinearLayout>-->
+    <!--    </HorizontalScrollView>-->
+
+
+
+

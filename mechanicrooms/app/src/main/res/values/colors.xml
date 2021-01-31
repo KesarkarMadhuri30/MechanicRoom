@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="colorPrimary">#008577</color>
+<color name="colorPrimaryDark">#3340FF</color>
+<color name="colorAccent">#D81B60</color>
+<color name="maincolor">#ADDEFF</color>
+<color name="black">#000000</color>
+<color name="white">#ffffff</color>
+<color name="orange">#ef3d54</color>
+<color name="gray">#8D8484</color>
+<color name="blue">#16436e</color>
+<color name="color_latest">#034585</color>
+    <color name="black_light">#4F4645</color>
+<color name="lighygrey">#E9E9E9</color>
+
+    <color name="grey_800">#424242</color>
+
+    <color name="card_one">#fff3ea</color>
+    <color name="card_two">#FDE6F9</color>
+    <color name="card_three">#EFFFF9</color>
+    <color name="card_four">#FDDBDF</color>
+    <color name="card_five">#EAFFEB</color>
+    <color name="card_six">#D8D1CD</color>
+    <color name="card_seven">#F8F0CA</color>
+
+    <color name="f_blue">#e0eeff</color>
+    <color name="f_pink">#ffebdc</color>
+
+    <color name="Whitelight">#FFFFFF</color>
+    <color name="grey_100">#f5f5f5</color>
+
+    <!--f2ca44-->
+    <color name="fent_blue">#133e59</color>
+
+    <color name="fentGray">#F3F6EE</color>
+    <color name="DarkGray">#E6EAE0</color>
+
+    <color name="orange_600">#E98302</color>
+    <color name="red_500">#D63D42</color>
+    <color name="light_green_500">#8bc34a</color>
+    <color name="yellow_500">#ffeb3b</color>
+    <color name="teal_500">#009688</color>
+
+    <color name="grandient1">#EFCC74</color>
+    <color name="grandient2">#E3A40D</color>
+
+    <color name="dots">#E3A40D</color>
+    <color name="offwhite">#fcfcff</color>
+    <color name="maroon">#800000</color>
+    <color name="yellow">#DDAF02</color>
+    <color name="pink">#f67475</color>
+
+    <color name="btn_green">#88b900</color>
+
+    <color name="success_stroke_color">#369202</color>
+    <color name="warning_stroke_color">#E62727</color>
+    <color name="red_btn_bg_color">#C02709</color>
+    <color name="red_btn_bg_pressed_color">#CC1910</color>
+    <color name="green_btn_bg_color">#038B05</color>
+    <color name="green_btn_bg_pressed_color">#038B05</color>
+    <color name="blue_btn_bg_color">#078AC7</color>
+    <color name="blue_btn_bg_pressed_color">#087EB4</color>
+
+</resources>

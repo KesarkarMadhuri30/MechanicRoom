@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    android:background="#ffffff"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imgMail"
+                android:layout_width="26dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="8dp"
+                android:src="@android:drawable/ic_dialog_email"
+                android:tint="#000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/txtNameone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bold"
+                    android:padding="1dp"
+                    android:text="Bike Company"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtAddressdateone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/semibold"
+                    android:padding="1dp"
+                    android:text="Service Date - 12 nov,2020"
+                    android:textColor="#5d5d5d"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txtAddressTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/semibold"
+                    android:padding="1dp"
+                    android:text="Total Payment"
+                    android:textColor="#5d5d5d"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imgMailsecond"
+                android:layout_width="26dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="8dp"
+                android:src="@android:drawable/ic_dialog_email"
+                android:tint="#000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/txtNametwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bold"
+                    android:padding="1dp"
+                    android:text="Bike Company"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtAddressdatetwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/semibold"
+                    android:padding="1dp"
+                    android:text="Service Date - 12 nov,2020"
+                    android:textColor="#5d5d5d"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txtAddressTimetwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/semibold"
+                    android:padding="1dp"
+                    android:text="Total Payment"
+                    android:textColor="#5d5d5d"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/imgMaila"
+                    android:layout_width="26dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="8dp"
+                    android:src="@android:drawable/ic_dialog_email"
+                    android:tint="#000000" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/txtName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bold"
+                        android:padding="1dp"
+                        android:text="Bike Company"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtAddressdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/semibold"
+                        android:padding="1dp"
+                        android:text="Service Date - 12 nov,2020"
+                        android:textColor="#5d5d5d"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txtAddressTimee"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/semibold"
+                        android:padding="1dp"
+                        android:text="Total Payment"
+                        android:textColor="#5d5d5d"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+
+

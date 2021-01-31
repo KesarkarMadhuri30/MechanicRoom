@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbacklow"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/toptext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:fontFamily="@font/bold"
+            android:gravity="center"
+            android:text="Select Servicing Location"
+            android:textColor="@color/blue"
+            android:textSize="27dp"
+            android:textStyle="bold" />
+
+
+
+        <Button
+            android:id="@+id/current_loc_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toptext"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/circle_button"
+            android:fontFamily="@font/semibold"
+            android:text="Use Current Location"
+            android:textColor="@color/white" />
+        <TextView
+            android:id="@+id/txtneear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/current_loc_btn"
+            android:layout_marginLeft="20dp"
+
+            android:layout_marginTop="26dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/bold"
+            android:paddingStart="25dp"
+            android:paddingLeft="25dp"
+            android:text="Near By Location"
+
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <RelativeLayout
+            android:id="@+id/city_lyt"
+            android:layout_below="@id/txtneear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="1sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="19dp"
+            android:background="@drawable/rounded_border_edittext"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/city_spinner"
+                style="@style/slotspinner"
+                android:layout_width="match_parent"
+                android:layout_height="35sp"
+                android:layout_margin="5sp"
+                android:ellipsize="end"
+                android:textColorHint="@color/black"
+                />
+        </RelativeLayout>
+       <!-- <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/Location"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/txtneear"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="19dp"
+            android:background="@drawable/rounded_border_edittext"
+            android:drawableLeft="@drawable/ic_arrow_downward_black_24dp"
+
+            android:drawableEnd="@drawable/ic_arrow_downward_black_24dp"
+            android:drawableRight="@drawable/ic_search_black_24dp"
+
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/semibold"
+            android:hint="Please Select Your City"
+            android:paddingStart="25dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/color_latest"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/maintext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/City"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="45dp"
+            android:fontFamily="casual"
+            android:text="Perfeered Dealership"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:visibility="gone" />-->
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edt_area"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/city_lyt"
+            android:layout_marginLeft="10dp"
+            android:inputType="text"
+            android:layout_marginTop="22dp"
+            android:layout_marginRight="19dp"
+            android:background="@drawable/rounded_border_edittext"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/semibold"
+            android:hint="Enter Your Area "
+            android:paddingStart="25dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/color_latest"
+            android:textSize="15dp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edt_areacode"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/edt_area"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginRight="19dp"
+            android:background="@drawable/rounded_border_edittext"
+            android:drawablePadding="5dp"
+            android:inputType="number"
+            android:maxLength="6"
+            android:fontFamily="@font/semibold"
+            android:hint="Enter Your Area Pincode"
+            android:paddingStart="25dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/color_latest"
+            android:textSize="15dp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edt_address"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/edt_areacode"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="19dp"
+            android:background="@drawable/rounded_border_edittext"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/semibold"
+            android:hint="Enter Manual Address"
+            android:paddingStart="25dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/color_latest"
+
+            android:textSize="15dp" />
+
+       <!--         <EditText
+                    android:id="@+id/namebike"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:layout_below="@id/Dealer"
+                    android:background="@drawable/rounded_border_edittext"
+
+                    android:drawableRight="@drawable/ic_arrow_downward_black_24dp"/>
+
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/bikke"
+                    android:background="@drawable/spinner_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/Dealer"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone"
+                    android:layout_marginRight="19dp"
+                    android:autofillHints="Bike Company" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:background="@drawable/spinner_background"
+                    android:visibility="gone"
+                    android:id="@+id/bikkename"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/bikke"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="19dp"
+                    android:autofillHints="Bike Name" />
+-->
+
+        <TextView
+            android:id="@+id/txtneearbike"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_address"
+            android:layout_marginLeft="20dp"
+
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/bold"
+            android:paddingStart="25dp"
+            android:paddingLeft="25dp"
+            android:text="Bike Details"
+
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <RelativeLayout
+            android:id="@+id/bikecompany"
+            android:layout_below="@id/txtneearbike"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="1sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="19dp"
+            android:background="@drawable/rounded_border_edittext"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/brand_spinner"
+                style="@style/slotspinner"
+                android:layout_width="match_parent"
+                android:layout_height="35sp"
+                android:layout_margin="5sp"
+                android:ellipsize="end"
+                android:textColorHint="@color/black"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bikemodel"
+            android:layout_below="@id/bikecompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="1sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="19dp"
+            android:background="@drawable/rounded_border_edittext"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/bikemodel_spinner"
+                style="@style/slotspinner"
+                android:layout_width="match_parent"
+                android:layout_height="35sp"
+                android:layout_margin="5sp"
+                android:ellipsize="end"
+                android:textColorHint="@color/black"
+                />
+        </RelativeLayout>
+
+       <!-- <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/Bikecompany"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/txtneearbike"
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="19dp"
+            android:background="@drawable/rounded_border_edittext"
+            android:drawableLeft="@drawable/ic_arrow_downward_black_24dp"
+
+            android:drawableEnd="@drawable/ic_arrow_downward_black_24dp"
+            android:drawableRight="@drawable/ic_search_black_24dp"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/semibold"
+            android:hint="Bike Company"
+            android:paddingStart="25dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/color_latest"
+            android:textSize="15dp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/bikemodel"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/Bikecompany"
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="19dp"
+            android:background="@drawable/rounded_border_edittext"
+            android:drawableLeft="@drawable/ic_arrow_downward_black_24dp"
+
+            android:drawableEnd="@drawable/ic_arrow_downward_black_24dp"
+            android:drawableRight="@drawable/ic_search_black_24dp"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/semibold"
+            android:hint="Bike Model"
+            android:paddingStart="25dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/color_latest"
+            android:textSize="15dp" />-->
+
+        <Button
+            android:id="@+id/mainidbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bikemodel"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/circle_button"
+            android:fontFamily="@font/semibold"
+            android:text="Next Step"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
