@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_below="@id/listview"
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:id="@+id/table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:stretchColumns="*" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="#92C94A" >
+
+
+                <TextView
+                    android:id="@+id/txt_service_name"
+                    android:layout_width="130sp"
+                  android:gravity="start"
+                    android:paddingTop="5sp"
+                    android:paddingLeft="8sp"
+                    android:text=""
+                    android:textSize="15sp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bitter"
+                    android:textColor="@color/fent_blue"
+                    />
+
+              <!--  <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/grey_500"/>-->
+
+                <TextView
+                    android:id="@+id/txt_service_price"
+                    android:layout_width="130sp"
+                    android:paddingTop="5sp"
+                    android:paddingLeft="8sp"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bitter"
+                    android:textColor="@color/fent_blue"
+                    />
+                <ImageView
+                    android:id="@+id/delete_btn"
+                    android:layout_width="50sp"
+                    android:layout_height="30sp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_close_24"
+                    />
+
+            </TableRow>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_500"/>
+        </TableLayout>
+    </LinearLayout>
+<!--    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3sp"
+        android:layout_marginTop="3sp"
+         android:background="#92C94A"
+        >
+        <TextView
+            android:id="@+id/txt_service_name"
+            android:layout_toLeftOf="@id/delete_btn"
+            android:layout_width="match_parent"
+            android:padding="1dp"
+            android:text=""
+            android:fontFamily="@font/bitter"
+            android:layout_marginLeft="5sp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txt_service_price"
+            android:layout_toLeftOf="@id/delete_btn"
+            android:layout_below="@id/txt_service_name"
+            android:layout_width="match_parent"
+            android:padding="1dp"
+            android:text=""
+            android:layout_marginLeft="5sp"
+            android:fontFamily="@font/bitter"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            />
+
+        <ImageView
+            android:id="@+id/delete_btn"
+            android:layout_width="50sp"
+            android:layout_height="30sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_baseline_close_24"
+            />
+    </RelativeLayout>-->
+
+    <!--<TableLayout
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+         >
+
+   &lt;!&ndash; <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#92C94A" >
+
+
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="180sp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:layout_gravity="center"
+            android:text="Service Name"
+
+            android:fontFamily="@font/semibold"
+            android:textColor="@color/fent_blue"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent" >
+
+            <View style="@style/Divider" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="180sp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/semibold"
+            android:text="Service Amount"
+            android:textColor="@color/fent_blue"
+            android:textSize="16sp" />
+
+
+    </TableRow>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp" >
+            <View style="@style/Divider" />
+        </LinearLayout>&ndash;&gt;
+    &lt;!&ndash; display this button in 3rd column via layout_column(zero based) &ndash;&gt;
+
+ &lt;!&ndash;   <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#6F9C33" >&ndash;&gt;
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#92C94A" >
+    <TextView
+        android:id="@+id/txt_service_name"
+        android:layout_width="184sp"
+        android:padding="5dp"
+        android:text=""
+        android:fontFamily="@font/bitter"
+
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+
+
+    <LinearLayout
+        android:layout_width="1dp"
+        android:layout_height="match_parent" >
+        <View style="@style/Divider" />
+
+    </LinearLayout>
+            <TextView
+                android:id="@+id/txt_service_price"
+                android:layout_width="100sp"
+                android:padding="5dp"
+                android:text=""
+                android:fontFamily="@font/bitter"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/delete_btn"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:layout_gravity="end"
+               android:src="@drawable/ic_baseline_close_24"
+                />
+    </TableRow>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="@color/grey_500"/>
+    </TableLayout>-->
+
+   <!-- <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <EditText
+        android:id="@+id/txt_job_cart"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="delete"
+        />
+</LinearLayout>-->
+</LinearLayout>

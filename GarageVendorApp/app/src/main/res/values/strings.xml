@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Mechanic Rooms Vendor App</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_help">Help</string>
+    <string name="menu_history">History</string>
+    <string name="menu_profile">Account</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="share_link">https://play.google.com/store/apps/details?id=com.developer.gknsinterapp&amp;hl=en</string>
+    <string name="qualityser">Quality Services </string>
+    <string name="qualitysernew">and Expert Mechanics </string>
+
+
+    <string name="aboutus1">\t\t\t\t Mechanic Rooms provide services, saving your time and money. We are providing the best value for every service and repair.</string>
+    <string name="aboutus2">\t\t\t\t We are committing the best-discounted offer every time for everything in every Garage- Mechanic Rooms. </string>
+    <string name="aboutus3"> #Enthusiastic #Trusting #Optimistic #Unbiased, #Reliable #Yearning #Authentic.</string>
+    <string name="aboutus4">\t\t\t\t MechanicRooms application is GPS based so you can always find the nearest service provider when you need them regardless if you’re going to work, traveling on vacation, or just hanging out at home. Never be stranded without having some help late at night, or worry about your loved one traveling without having help if they break down. We won\'t leave you stranded.</string>
+    <string name="aboutus5">\t\t\t\t Periodic Servicing, Part repairing, Tire Replacement Services, Oil Changing Services, Towing, Battery, Part Repair &amp; Replacement, denting painting, washing, and various other services through our associated or partners’ garages that come to where you are at and when you need them.</string>
+    <string name="aboutus6">\t\t\t\t We are Indian start-ups, we believe in new thought of technology and new generation ideas solution for our partners and customer as well.</string>
+    <string name="aboutus7">\t\t\t\t We are providing a Periodic alert alarm, History of Servicing, Repairing, &amp; Part maintenance notification, also a live dedicated mechanical consultant for your vehicles related to any query.</string>
+
+
+    <string name="privacy_policy">
+        \t\t\t\t We understand that your privacy is important to you and we respect that. We ensure you that Etourya Private Limited maintains complete confidentiality of the details that you have shared with us and will not share it with any third party.</string>
+
+    <string name="pp1">\t\t\t\t We may ask for certain details such as name; date of birth; e-mail address; residential address; contact number etc for registration purposes or for giving feedback, contests, newsletters and placing an order. At any point in time, you can unsubscribe to our newsletters or any other information which you may receive from Etourya Private Limited.</string>
+    <string name="pp2">\t\t\t\t Also, for enhanced security, Etourya Private Limited does not accept any financial information on its servers. All information entered by the customer is directly received through our payment gateway and are transmitted to their respective bank\'s servers. All this is done through industry standard encryption protocol known as SSL (Secure Socket Layer).</string>
+    <string name="pp3">\t\t\t\t The payments on our websites and application are processed by a third party who has signed a non-disclosure agreement with us and therefore, are not allowed to share any personal information of the customers.</string>
+
+</resources>

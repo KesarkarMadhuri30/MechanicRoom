@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+   >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+    <ImageView
+        android:id="@+id/imagev"
+        android:layout_width="match_parent"
+        android:layout_height="198dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/bikeimagenew" />
+
+    <TextView
+        android:id="@+id/texxxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagev"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="35dp"
+
+        android:layout_marginTop="40dp"
+
+        android:layout_marginRight="35dp"
+        android:fontFamily="@font/bold"
+        android:gravity="center"
+        android:text="@string/qualityser"
+        android:textColor="@color/orange"
+        android:textSize="23dp" />
+
+    <TextView
+        android:id="@+id/texxxtnew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/texxxt"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="35dp"
+        android:fontFamily="@font/bold"
+        android:gravity="center"
+        android:text="@string/qualitysernew"
+        android:textColor="@color/blue"
+        android:textSize="23dp" />
+
+    <LinearLayout
+        android:id="@+id/linearname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/texxxtnew"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginRight="25dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/ic_account_circle_black_24dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:text="Enter Name"
+
+                android:textColor="@color/blue"
+                android:textSize="18dp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/name_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/semibold"
+                android:inputType="textMultiLine"
+                android:hint="Name"
+                android:textColor="@color/black"
+                android:textColorHint="@color/color_latest"
+                android:textSize="16dp"
+                app:backgroundTint="@color/blue" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearname"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="25dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/ic_email_black_24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:text="Enter Email"
+
+                android:textColor="@color/blue"
+                android:textSize="18dp" />
+
+  <!--          <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/email_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/semibold"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:textColorHint="@color/color_latest"
+                android:textSize="16dp"
+                app:backgroundTint="@color/blue" />-->
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/email_edt"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_marginTop="10dp"
+
+                android:fontFamily="@font/semibold"
+                android:hint=" Email"
+                android:textColor="@color/black"
+                android:textColorHint="@color/color_latest"
+                android:textSize="16dp"
+                app:backgroundTint="@color/blue"
+                android:inputType="textEmailAddress"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+        <Button
+        android:id="@+id/nexxxxxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:layout_below="@id/linearemail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20sp"
+        android:layout_marginRight="20dp"
+
+        android:background="@drawable/circle_button"
+        android:fontFamily="@font/semibold"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

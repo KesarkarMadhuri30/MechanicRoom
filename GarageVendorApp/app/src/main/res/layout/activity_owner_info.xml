@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/mainbacklow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_marginTop="50sp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="8sp"
+            android:background="@drawable/border2"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10sp"
+                    android:layout_weight="0.50"
+                    android:fontFamily="@font/semibold"
+                    android:gravity="start"
+                    android:paddingLeft="0sp"
+                    android:text="Personal Information"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginRight="15sp"
+                    android:background="@color/black"
+                    />
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/owner_name_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/semibold"
+                    android:inputType="textMultiLine"
+
+                    android:hint="Enter Owner Name"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/color_latest"
+                    android:textSize="16dp"
+                    app:backgroundTint="@color/blue" />
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/owner_mobile_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/semibold"
+                    android:inputType="number"
+
+                    android:maxLength="10"
+                    android:hint="Enter Owner Mobile"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/color_latest"
+                    android:textSize="16dp"
+                    app:backgroundTint="@color/blue" />
+              <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/owner_email_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginTop="10dp"
+
+                    android:fontFamily="@font/semibold"
+                    android:hint="Enter Owner Email"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/color_latest"
+                    android:textSize="16dp"
+                    app:backgroundTint="@color/blue"
+                    android:inputType="textEmailAddress"
+                     />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_owner_info_update"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+              android:layout_marginBottom="20sp"
+                android:layout_marginLeft="30sp"
+                android:layout_marginRight="30sp"
+                android:layout_gravity="center"
+                android:text="Submit"
+                android:fontFamily="serif"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@drawable/circle_button"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

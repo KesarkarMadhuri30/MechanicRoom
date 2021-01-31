@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/mainbacklow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+      android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10sp"
+            android:padding="5sp"
+            android:background="@drawable/border2"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10sp"
+                android:layout_marginLeft="10sp"
+                android:layout_weight="0.50"
+                android:fontFamily="@font/semibold"
+                android:gravity="start"
+                android:paddingLeft="0sp"
+                android:text="Garage Opening Closing Time"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5sp"
+                android:layout_marginLeft="15sp"
+                android:layout_marginRight="15sp"
+                android:background="@color/black"
+                />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25sp"
+                android:layout_marginLeft="1sp"
+                android:layout_marginRight="1sp"
+                android:background="@drawable/edt_bg">
+                <TextView
+                    android:id="@+id/txt_open_time"
+                    android:layout_toLeftOf="@+id/open_time_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text=""
+                    android:fontFamily="serif"
+                    android:textSize="16sp"
+                    android:padding="5sp"
+                    android:textStyle="normal"
+                    android:textColor="@color/blue"
+                    />
+
+                <Button
+                    android:id="@+id/open_time_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Open time"
+                    android:layout_margin="2sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="end"
+
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:layout_marginLeft="1sp"
+                android:layout_marginRight="1sp"
+                android:background="@drawable/edt_bg">
+
+                <TextView
+                    android:id="@+id/txt_close_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toLeftOf="@+id/close_time_btn"
+
+                    android:fontFamily="serif"
+                    android:padding="5sp"
+                    android:text=""
+                    android:textColor="@color/blue"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+                <Button
+                    android:id="@+id/close_time_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select to time"
+                    android:layout_margin="2sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="end"
+
+                    />
+            </RelativeLayout>
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/weekoff_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/semibold"
+                android:inputType="textMultiLine"
+                android:hint="Enter Week-Off Day"
+                android:textColor="@color/black"
+                android:textColorHint="@color/color_latest"
+                android:textSize="16dp"
+                app:backgroundTint="@color/blue" />
+        </LinearLayout>
+            <Button
+                android:id="@+id/time_submit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="25sp"
+                android:layout_marginRight="25sp"
+                android:layout_marginBottom="20sp"
+                android:background="@drawable/circle_button"
+                android:text="SUBMIT"
+                android:fontFamily="serif"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
